@@ -1,0 +1,103 @@
+/* Футер */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--dark-background-color);
+}
+
+/* Лого */
+.logo.dark {
+  margin-bottom: 20px;
+
+  color: var(--dark-logo-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Адрес */
+.address {
+  font-style: normal;
+}
+
+.address .address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address .link {
+  line-height: 1.71;
+
+  color: var(--dark-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address .link.contact {
+  color: var(--footer-contacts-text-color);
+}
+
+.footer-elements {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-elements .first-column {
+  margin-right: 70px;
+}
+
+.second-column .text,
+.third-column .text {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+
+  color: var(--dark-text-color);
+}
+
+.second-column .link {
+  color: var(--dark-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.third-column {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+  padding: 0 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.mailing-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-mailing .icon {
+  margin-left: 10px;
+}
