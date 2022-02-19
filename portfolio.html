@@ -23,32 +23,37 @@
 
   <body>
     <!-- Хедер -->
-    <header>
-      <div class="container main-header">
-        <nav class="main-nav">
-          <a class="logo position link" href="./"> <span class="logo-accent">Web</span>Studio </a>
-
-          <ul class="site-nav">
-            <li class="site-nav-item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="site-nav-item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo logo--header-position link" href="./">
+          <span class="logo__text--accent">Web</span>Studio
+        </a>
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="./index.html">Студия</a>
             </li>
-            <li class="site-nav-item"><a class="link" href="">Контакты</a></li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--current link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item"><a class="nav-list__link link" href="">Контакты</a></li>
           </ul>
         </nav>
 
-        <ul class="contact">
-          <li class="contact-item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="contact-list">
+          <li class="contact-list__item--ml">
+            <a class="contact-list__link link" href="mailto:info@devstudio.com">
+              <svg class="contact-list__icon contact-list__icon--mr" width="16" height="12">
                 <use href="images/icons.svg#header-envelope-icon"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="header-icon" width="10" height="16">
+          <li class="contact-list__item--ml">
+            <a class="contact-list__link link" href="tel:+380961111111">
+              <svg class="contact-list__icon contact-list__icon--mr" width="10" height="16">
                 <use href="images/icons.svg#header-phone-icon"></use>
               </svg>
               +38 096 111 11 11</a
@@ -258,15 +263,17 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="container footer-elements">
-        <div class="first-column">
-          <a class="logo dark link" href="./"> <span class="logo-accent">Web</span>Studio </a>
+      <div class="container footer__elements">
+        <div class="footer_first-column">
+          <a class="logo logo--dark logo--footer-position link" href="./">
+            <span class="logo__text--accent">Web</span>Studio
+          </a>
 
           <address>
-            <ul class="address">
-              <li class="address-item">
+            <ul class="address-list">
+              <li class="address-list__item">
                 <a
-                  class="link"
+                  class="address-list__link link"
                   href="https://goo.gl/maps/HY3VaiPeCCJGnbPLA"
                   target="_blank"
                   rel="noopener"
@@ -274,43 +281,49 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="address-item">
-                <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address-list__item">
+                <a
+                  class="address-list__link address-list__link--gray link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="address-item">
-                <a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address-list__item">
+                <a class="address-list__link address-list__link--gray link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="second-column">
-          <p class="text">присоединяйтесь</p>
-          <ul class="social-natwork-list">
-            <li class="social-natwork-item">
-              <a href="" class="link" aria-label="instagram">
-                <svg class="icon" width="20" height="20">
+        <div class="footer__second-column">
+          <p class="footer__text">присоединяйтесь</p>
+          <ul class="sn-list">
+            <li class="sn-list__item">
+              <a href="" class="sn-list__link sn-list__link--dark link" aria-label="instagram">
+                <svg class="sn-list__icon" width="20" height="20">
                   <use href="images/icons.svg#sn-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-natwork-item">
-              <a href="" class="link" aria-label="twitter">
-                <svg class="icon" width="20" height="20">
+            <li class="sn-list__item">
+              <a href="" class="sn-list__link sn-list__link--dark link" aria-label="twitter">
+                <svg class="sn-list__icon" width="20" height="20">
                   <use href="images/icons.svg#sn-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-natwork-item">
-              <a href="" class="link" aria-label="facebook">
-                <svg class="icon" width="20" height="20">
+            <li class="sn-list__item">
+              <a href="" class="sn-list__link sn-list__link--dark link" aria-label="facebook">
+                <svg class="sn-list__icon" width="20" height="20">
                   <use href="images/icons.svg#sn-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-natwork-item">
-              <a href="" class="link" aria-label="linkedin">
-                <svg class="icon" width="20" height="20">
+            <li class="sn-list__item">
+              <a href="" class="sn-list__link sn-list__link--dark link" aria-label="linkedin">
+                <svg class="sn-list__icon" width="20" height="20">
                   <use href="images/icons.svg#sn-linkedin"></use>
                 </svg>
               </a>
@@ -318,12 +331,13 @@
           </ul>
         </div>
 
-        <div class="third-column">
-          <p class="text">Подпишитесь на рассылку</p>
-          <form class="footer-form">
+        <div class="footer__third-column">
+          <p class="footer__text">Подпишитесь на рассылку</p>
+
+          <form class="mailing-form">
             <label for="mailing"></label>
             <input
-              class="mailing-input"
+              class="mailing-form__input"
               type="email"
               name="mailing"
               id="mailing"
@@ -331,9 +345,9 @@
               required
             />
 
-            <button class="submit-button button button-mailing" type="submit">
+            <button class="submit-button button" type="submit">
               Подписаться
-              <svg class="icon" width="24" height="24">
+              <svg class="submit-button__icon" width="24" height="24">
                 <use href="images/icons.svg#icon-send"></use>
               </svg>
             </button>

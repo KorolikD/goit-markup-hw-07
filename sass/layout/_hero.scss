@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.hero-bcg-image {
+.hero__bcg-image {
   max-width: 1600px;
   height: 600px;
   margin-right: auto;
@@ -18,7 +18,7 @@
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -33,7 +33,7 @@
   color: var(--dark-text-color);
 }
 
-.button.primary {
+.hero__button {
   padding: 10px 32px;
 
   font-weight: 700;

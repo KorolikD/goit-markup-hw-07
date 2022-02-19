@@ -3,7 +3,11 @@
   padding-bottom: 94px;
 }
 
-.section-title {
+.section--no-padding {
+  padding-top: 0;
+}
+
+.section__title {
   margin-bottom: 50px;
 
   font-weight: 700;

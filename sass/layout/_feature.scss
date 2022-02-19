@@ -1,16 +1,16 @@
-.feature {
+.feature-list {
   display: flex;
 }
 
-.feature .feature-item {
+.feature-list__item {
   flex-basis: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.feature .feature-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.feature-container {
+.feature-list__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   background-color: var(--light-background-color);
 }
 
-.feature .title {
+.feature-list__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -31,6 +31,6 @@
   text-transform: uppercase;
 }
 
-.feature .text {
+.feature-list__text {
   line-height: 1.71;
 }
