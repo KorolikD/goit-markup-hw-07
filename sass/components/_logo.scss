@@ -4,14 +4,14 @@
   font-size: 26px;
   line-height: 1.19;
 
-  color: var(--logo-color);
+  color: $logo-color;
 
   &__text--accent {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   &--dark {
-    color: var(--dark-logo-color);
+    color: $dark-logo-color;
   }
 
   &--header-position {

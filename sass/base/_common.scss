@@ -3,8 +3,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+  color: $primary-text-color;
+  background-color: $primary-background-color;
 }
 
 .link {
@@ -16,5 +16,5 @@ body {
 }
 
 .title {
-  color: var(--title-text-color);
+  color: $title-text-color;
 }

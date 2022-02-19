@@ -1,27 +1,25 @@
-:root {
-  --logo-color: #000000;
-  --dark-logo-color: #ffffff;
+$logo-color: #000000;
+$dark-logo-color: #ffffff;
 
-  --accent-color: #2196f3;
+$accent-color: #2196f3;
 
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --dark-text-color: #ffffff;
-  --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
-  --icon-color: #afb1b8;
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$dark-text-color: #ffffff;
+$footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+$icon-color: #afb1b8;
 
-  --primary-background-color: #ffffff;
-  --light-background-color: #f5f4fa;
-  --dark-background-color: #2f303a;
-  --project-background-color: rgba(33, 150, 243, 0.9);
+$primary-background-color: #ffffff;
+$light-background-color: #f5f4fa;
+$dark-background-color: #2f303a;
+$project-background-color: rgba(33, 150, 243, 0.9);
 
-  --button-text-colour: #ffffff;
-  --button-secondary-background-colour: #f5f4fa;
-  --button-focus-color: #188ce8;
+$button-text-colour: #ffffff;
+$button-secondary-background-colour: #f5f4fa;
+$button-focus-color: #188ce8;
 
-  --header-line: #ececec;
-  --border-elements: #eeeeee;
-}
+$header-line: #ececec;
+$border-elements: #eeeeee;
 
 /*Цвет Логотипа: #FFFFFF ##000000
 

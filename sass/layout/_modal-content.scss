@@ -38,7 +38,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -55,7 +55,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .modal-form__input:focus + & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -87,7 +87,7 @@
   }
 
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -118,7 +118,7 @@
   }
 
   .checkbox-field__item:focus + & {
-    outline: var(--accent-color) solid 1px;
+    outline: $accent-color solid 1px;
   }
 }
 
@@ -136,5 +136,5 @@
 
 .checkbox-field__link {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
