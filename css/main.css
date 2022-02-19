@@ -118,7 +118,7 @@ body {
   margin-bottom: 20px;
 }
 
-.button {
+.button, .filter-button {
   display: inline-block;
   border: 0;
   border-radius: 4px;
@@ -193,6 +193,22 @@ body {
 
 .close-button:hover, .close-button:focus {
   fill: var(--accent-color);
+}
+
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-background-colour);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-button:hover, .filter-button:focus {
+  color: var(--button-text-colour);
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .sn-list {
@@ -930,25 +946,7 @@ body {
   color: var(--accent-color);
 }
 
-/* --------------------Кнопки-------------------- */
-.button.secondary {
-  color: var(--title-text-color);
-  background-color: var(--button-secondary-background-colour);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--button-text-colour);
-  background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter {
+.filter-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,12 +956,11 @@ body {
   margin-bottom: 50px;
 }
 
-.filter .filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-/* --------------------Список проектов-------------------- */
-.project {
+.project-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,32 +970,31 @@ body {
   margin-left: -30px;
 }
 
-.project .project-item {
-  /* flex-basis: calc((100% - 3 * 30px) / 3); */
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
+.project-list__item {
+  -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
+      flex-basis: calc((100% - 3 * 30px) / 3);
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.project-item .link {
+.project-list__link {
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item .link:hover, .project-item .link:focus {
+.project-list__link:hover, .project-list__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product-wraper {
+.img-overlay-container {
   position: relative;
   overflow: hidden;
 }
 
-.project-description {
+.project-list__overlay-description {
   position: absolute;
   top: 0;
   left: 0;
@@ -1023,19 +1019,19 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item .link:hover .project-description,
-.project-item .link:focus .project-description {
+.project-list__item .link:hover .project-list__overlay-description,
+.project-list__item .link:focus .project-list__overlay-description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.project-container {
+.project-text-container {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: transparent;
 }
 
-.project .title {
+.project-list__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -1043,7 +1039,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project .text {
+.project-list__text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
