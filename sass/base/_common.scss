@@ -7,14 +7,10 @@ body {
   background-color: $primary-background-color;
 }
 
-.link {
+a {
   display: inline-block;
 
   text-decoration: none;
 
   // user-select: none;
-}
-
-.title {
-  color: $title-text-color;
 }

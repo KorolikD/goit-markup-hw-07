@@ -6,19 +6,11 @@
 
   color: $logo-color;
 
-  &__text--accent {
+  &--blue {
     color: $accent-color;
   }
 
   &--dark {
     color: $dark-logo-color;
-  }
-
-  &--header-position {
-    margin-right: 93px;
-  }
-
-  &--footer-position {
-    margin-bottom: 20px;
   }
 }

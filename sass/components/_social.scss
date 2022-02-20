@@ -1,9 +1,9 @@
-.sn-list {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.sn-list__item {
+.social__item {
   width: 44px;
   height: 44px;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.sn-list__link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +39,6 @@
   }
 }
 
-.sn-list__icon {
+.social__icon {
   fill: currentColor;
 }

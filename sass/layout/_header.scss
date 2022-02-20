@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.logo__header {
+  margin-right: 93px;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -83,7 +87,7 @@
   margin-left: auto;
 }
 
-.contact-list__item--ml {
+.contact-list__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -110,9 +114,7 @@
 }
 
 .contact-list__icon {
-  fill: currentColor;
+  margin-right: 10px;
 
-  &--mr {
-    margin-right: 10px;
-  }
+  fill: currentColor;
 }
